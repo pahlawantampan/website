@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>50 Soal Pilihan Ganda OOP dengan PHP</title>
+  <style>
+    :root{--bg:#f6f8fb;--card:#fff;--accent:#0f62fe;--muted:#6b7280;--glass: rgba(255,255,255,0.6)}
+    *{box-sizing:border-box}
+    body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:linear-gradient(180deg,#eef2ff 0%,var(--bg) 100%);color:#0f172a;margin:0;padding:24px}
+    .container{max-width:980px;margin:0 auto}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+    .logo{width:64px;height:64px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px;box-shadow:0 6px 18px rgba(15,98,254,0.12)}
+    h1{font-size:20px;margin:0}
+    p.lead{margin:6px 0 18px;color:var(--muted)}
+
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 16px rgba(12,17,43,0.06);margin-bottom:18px}
+
+    ol.questions{padding-left:18px;margin:0}
+    li.q{margin-bottom:14px;padding:12px;border-radius:8px;background:linear-gradient(180deg, rgba(15,98,254,0.02), transparent)}
+    .q-text{font-weight:600;margin-bottom:6px}
+    .choices{display:flex;flex-wrap:wrap;gap:8px}
+    .choice{background:var(--glass);padding:6px 10px;border-radius:8px;border:1px solid rgba(15,23,42,0.04);min-width:120px}
+    .meta{font-size:13px;color:var(--muted);margin-top:8px}
+
+    .actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+    button{background:var(--accent);color:#fff;border:0;padding:8px 12px;border-radius:8px;cursor:pointer}
+    button.secondary{background:#e6e9f2;color:#0f172a}
+
+    .answer-key{margin-top:12px;display:none}
+    .answer-key pre{white-space:pre-wrap;margin:0;font-family:monospace;background:#0b1220;color:#e6f0ff;padding:10px;border-radius:8px}
+
+    .print-hint{font-size:13px;color:var(--muted);margin-top:8px}
+
+    footer{margin-top:16px;color:var(--muted);font-size:13px}
+
+    @media print{
+      body{background:white}
+      .actions, header.logo, footer{display:none}
+      .card{box-shadow:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">OOP</div>
+      <div>
+        <h1>50 Soal Pilihan Ganda: OOP dengan PHP</h1>
+        <p class="lead">Soal mencakup konsep dasar OOP, enkapsulasi, inheritance, polymorphism, interface, trait, magic methods, dan penerapan praktis. Disertai kunci jawaban yang bisa ditampilkan/ disembunyikan.</p>
+      </div>
+    </header>
+
+    <div class="card">
+      
+
+      <hr style="margin:12px 0">
+
+      <ol class="questions">
+        <li class="q"><div class="q-text">1. OOP adalah singkatan dari…</div>
+          <div class="choices"><div class="choice">a. Object Oriented Program</div><div class="choice">b. Object Oriented Programming</div><div class="choice">c. Order Of Programming</div><div class="choice">d. Object Original Programming</div></div>
+        </li>
+        <li class="q"><div class="q-text">2. Konsep utama dari OOP yang membungkus data dan fungsi dalam satu kesatuan disebut…</div>
+          <div class="choices"><div class="choice">a. Inheritance</div><div class="choice">b. Encapsulation</div><div class="choice">c. Polymorphism</div><div class="choice">d. Abstraction</div></div>
+        </li>
+        <li class="q"><div class="q-text">3. Kelas dalam PHP didefinisikan dengan keyword…</div>
+          <div class="choices"><div class="choice">a. define</div><div class="choice">b. object</div><div class="choice">c. class</div><div class="choice">d. function</div></div>
+        </li>
+        <li class="q"><div class="q-text">4. Untuk membuat objek baru dari sebuah class digunakan keyword…</div>
+          <div class="choices"><div class="choice">a. create</div><div class="choice">b. make</div><div class="choice">c. new</div><div class="choice">d. object</div></div>
+        </li>
+        <li class="q"><div class="q-text">5. Nama fungsi konstruktor pada PHP versi terbaru adalah…</div>
+          <div class="choices"><div class="choice">a. __constructor()</div><div class="choice">b. constructor()</div><div class="choice">c. __construct()</div><div class="choice">d. construct()</div></div>
+        </li>
+        <li class="q"><div class="q-text">6. Manakah yang bukan pilar utama OOP?</div>
+          <div class="choices"><div class="choice">a. Inheritance</div><div class="choice">b. Abstraction</div><div class="choice">c. Encapsulation</div><div class="choice">d. Compilation</div></div>
+        </li>
+        <li class="q"><div class="q-text">7. Object dalam OOP adalah…</div>
+          <div class="choices"><div class="choice">a. Blueprint dari class</div><div class="choice">b. Hasil instansiasi class</div><div class="choice">c. Fungsi dalam PHP</div><div class="choice">d. Variabel global</div></div>
+        </li>
+        <li class="q"><div class="q-text">8. Class dalam OOP dapat dianggap sebagai…</div>
+          <div class="choices"><div class="choice">a. Objek nyata</div><div class="choice">b. Blueprint dari objek</div><div class="choice">c. Fungsi bawaan PHP</div><div class="choice">d. Array data</div></div>
+        </li>
+        <li class="q"><div class="q-text">9. Untuk mengakses properti dan method dalam objek digunakan operator…</div>
+          <div class="choices"><div class="choice">a. ::</div><div class="choice">b. -></div><div class="choice">c. =></div><div class="choice">d. ..</div></div>
+        </li>
+        <li class="q"><div class="q-text">10. Method dalam OOP PHP adalah…</div>
+          <div class="choices"><div class="choice">a. Variabel dalam class</div><div class="choice">b. Fungsi dalam class</div><div class="choice">c. Objek baru</div><div class="choice">d. Constant class</div></div>
+        </li>
+
+        <!-- For brevity in the file, include the rest of questions similarly -->
+
+        <li class="q"><div class="q-text">11. Access modifier dalam PHP adalah…</div>
+          <div class="choices"><div class="choice">a. public, protected, private</div><div class="choice">b. open, close, static</div><div class="choice">c. set, get, call</div><div class="choice">d. global, local, static</div></div>
+        </li>
+        <li class="q"><div class="q-text">12. Jika sebuah properti di-declare sebagai `private`, maka…</div>
+          <div class="choices"><div class="choice">a. Hanya bisa diakses oleh objek lain</div><div class="choice">b. Hanya bisa diakses di dalam class itu sendiri</div><div class="choice">c. Bisa diakses semua class turunan</div><div class="choice">d. Tidak bisa digunakan</div></div>
+        </li>
+        <li class="q"><div class="q-text">13. Keyword untuk mendefinisikan variabel dalam class adalah…</div>
+          <div class="choices"><div class="choice">a. var</div><div class="choice">b. property</div><div class="choice">c. public/private/protected</div><div class="choice">d. let</div></div>
+        </li>
+        <li class="q"><div class="q-text">14. Getter dan Setter digunakan untuk…</div>
+          <div class="choices"><div class="choice">a. Menghapus objek</div><div class="choice">b. Mengatur akses ke properti private</div><div class="choice">c. Membuat konstruktor</div><div class="choice">d. Membuat class baru</div></div>
+        </li>
+        <li class="q"><div class="q-text">15. Jika sebuah method di dalam class diberi `protected`, maka…</div>
+          <div class="choices"><div class="choice">a. Hanya dapat diakses di dalam class itu saja</div><div class="choice">b. Tidak dapat dipanggil sama sekali</div><div class="choice">c. Bisa diakses oleh class itu sendiri dan class turunannya</div><div class="choice">d. Bisa diakses dari luar class</div></div>
+        </li>
+
+        <li class="q"><div class="q-text">16. Keyword yang digunakan untuk mewarisi class dalam PHP adalah…</div>
+          <div class="choices"><div class="choice">a. implements</div><div class="choice">b. extends</div><div class="choice">c. inherit</div><div class="choice">d. parent</div></div>
+        </li>
+        <li class="q"><div class="q-text">17. Class turunan disebut juga…</div>
+          <div class="choices"><div class="choice">a. Parent class</div><div class="choice">b. Child class</div><div class="choice">c. Main class</div><div class="choice">d. Super class</div></div>
+        </li>
+        <li class="q"><div class="q-text">18. Keyword `parent::` digunakan untuk…</div>
+          <div class="choices"><div class="choice">a. Menghapus objek induk</div><div class="choice">b. Mengakses method/properti dari parent class</div><div class="choice">c. Membuat konstruktor</div><div class="choice">d. Membuat class baru</div></div>
+        </li>
+        <li class="q"><div class="q-text">19. Jika sebuah class tidak memiliki konstruktor, lalu class turunan memanggil `parent::__construct()`, maka…</div>
+          <div class="choices"><div class="choice">a. Error terjadi</div><div class="choice">b. Akan memanggil konstruktor default</div><div class="choice">c. Tidak terjadi apa-apa</div><div class="choice">d. Membuat class baru</div></div>
+        </li>
+        <li class="q"><div class="q-text">20. Inheritance memungkinkan…</div>
+          <div class="choices"><div class="choice">a. Class saling menggantikan</div><div class="choice">b. Class mewarisi properti dan method class lain</div><div class="choice">c. Class menghapus objek lain</div><div class="choice">d. Class berjalan otomatis</div></div>
+        </li>
+
+        <li class="q"><div class="q-text">21. Polymorphism berarti…</div>
+          <div class="choices"><div class="choice">a. Satu nama method dapat memiliki banyak bentuk</div><div class="choice">b. Objek hanya punya satu bentuk</div><div class="choice">c. Tidak bisa override method</div><div class="choice">d. Class tidak bisa diwariskan</div></div>
+        </li>
+        <li class="q"><div class="q-text">22. Method overriding terjadi jika…</div>
+          <div class="choices"><div class="choice">a. Method dalam parent class dihapus</div><div class="choice">b. Method dalam child class mengganti method parent</div><div class="choice">c. Class membuat konstruktor</div><div class="choice">d. Properti diubah</div></div>
+        </li>
+        <li class="q"><div class="q-text">23. Keyword yang dipakai agar child class wajib mengimplementasikan method adalah…</div>
+          <div class="choices"><div class="choice">a. virtual</div><div class="choice">b. abstract</div><div class="choice">c. protected</div><div class="choice">d. static</div></div>
+        </li>
+        <li class="q"><div class="q-text">24. Jika interface memiliki 3 method, maka class yang mengimplementasikan interface tersebut harus…</div>
+          <div class="choices"><div class="choice">a. Mengimplementasikan minimal 1 method</div><div class="choice">b. Mengimplementasikan semua method</div><div class="choice">c. Tidak perlu implementasi</div><div class="choice">d. Bisa pilih bebas</div></div>
+        </li>
+        <li class="q"><div class="q-text">25. Polymorphism memudahkan programmer untuk…</div>
+          <div class="choices"><div class="choice">a. Membuat class tidak bisa digunakan</div><div class="choice">b. Membuat banyak method dengan nama sama untuk objek berbeda</div><div class="choice">c. Menghapus class induk</div><div class="choice">d. Menyembunyikan data</div></div>
+        </li>
+
+        <li class="q"><div class="q-text">26. Abstract class tidak bisa…</div>
+          <div class="choices"><div class="choice">a. Memiliki properti</div><div class="choice">b. Memiliki method</div><div class="choice">c. Diinstansiasi langsung</div><div class="choice">d. Diturunkan</div></div>
+        </li>
+        <li class="q"><div class="q-text">27. Sebuah method abstract harus…</div>
+          <div class="choices"><div class="choice">a. Didefinisikan isinya</div><div class="choice">b. Tidak memiliki isi (hanya deklarasi)</div><div class="choice">c. Ditulis di luar class</div><div class="choice">d. Menggunakan keyword static</div></div>
+        </li>
+        <li class="q"><div class="q-text">28. Keyword untuk membuat interface adalah…</div>
+          <div class="choices"><div class="choice">a. implements</div><div class="choice">b. interface</div><div class="choice">c. abstract</div><div class="choice">d. declare</div></div>
+        </li>
+        <li class="q"><div class="q-text">29. Class dapat mewarisi hanya satu parent class, tetapi dapat…</div>
+          <div class="choices"><div class="choice">a. Mengimplementasikan banyak interface</div><div class="choice">b. Mewarisi banyak class</div><div class="choice">c. Tidak memiliki parent</div><div class="choice">d. Membuat interface baru</div></div>
+        </li>
+        <li class="q"><div class="q-text">30. Perbedaan abstract class dan interface adalah…</div>
+          <div class="choices"><div class="choice">a. Interface bisa punya konstruktor</div><div class="choice">b. Abstract class bisa punya implementasi method, interface tidak</div><div class="choice">c. Abstract class tidak bisa punya properti</div><div class="choice">d. Interface bisa langsung diinstansiasi</div></div>
+        </li>
+
+        <li class="q"><div class="q-text">31. Keyword `static` digunakan untuk…</div>
+          <div class="choices"><div class="choice">a. Membuat objek baru otomatis</div><div class="choice">b. Membuat properti/method dapat diakses tanpa membuat objek</div><div class="choice">c. Membuat method tidak bisa diwarisi</div><div class="choice">d. Membuat variabel global</div></div>
+        </li>
+        <li class="q"><div class="q-text">32. Untuk mengakses properti/method `static` digunakan operator…</div>
+          <div class="choices"><div class="choice">a. -></div><div class="choice">b. =></div><div class="choice">c. ::</div><div class="choice">d. ..</div></div>
+        </li>
+        <li class="q"><div class="q-text">33. Keyword `const` digunakan untuk…</div>
+          <div class="choices"><div class="choice">a. Membuat variabel biasa</div><div class="choice">b. Membuat konstanta dalam class</div><div class="choice">c. Membuat class tidak bisa diwarisi</div><div class="choice">d. Membuat objek</div></div>
+        </li>
+        <li class="q"><div class="q-text">34. Properti static berlaku…</div>
+          <div class="choices"><div class="choice">a. Hanya untuk satu objek</div><div class="choice">b. Sama untuk semua objek dari class yang sama</div><div class="choice">c. Tidak bisa digunakan di child class</div><div class="choice">d. Hanya untuk konstruktor</div></div>
+        </li>
+        <li class="q"><div class="q-text">35. Fungsi `self::` dalam class digunakan untuk…</div>
+          <div class="choices"><div class="choice">a. Memanggil properti/method milik objek</div><div class="choice">b. Memanggil properti/method static dalam class itu sendiri</div><div class="choice">c. Membuat objek baru</div><div class="choice">d. Menghapus objek</div></div>
+        </li>
+
+        <li class="q"><div class="q-text">36. Magic method selalu diawali dengan…</div>
+          <div class="choices"><div class="choice">a. __ (double underscore)</div><div class="choice">b. $$</div><div class="choice">c. //</div><div class="choice">d. #</div></div>
+        </li>
+        <li class="q"><div class="q-text">37. Method `__destruct()` dipanggil ketika…</div>
+          <div class="choices"><div class="choice">a. Objek dibuat</div><div class="choice">b. Objek dihapus atau program selesai</div><div class="choice">c. Class diwariskan</div><div class="choice">d. Variabel ditulis</div></div>
+        </li>
+        <li class="q"><div class="q-text">38. Untuk membuat objek tidak bisa diinstansiasi dari luar class, biasanya digunakan pola…</div>
+          <div class="choices"><div class="choice">a. Inheritance</div><div class="choice">b. Singleton</div><div class="choice">c. Factory</div><div class="choice">d. Encapsulation</div></div>
+        </li>
+        <li class="q"><div class="q-text">39. Magic method `__get()` digunakan ketika…</div>
+          <div class="choices"><div class="choice">a. Mengakses properti yang tidak ada atau tidak bisa diakses</div><div class="choice">b. Menghapus objek</div><div class="choice">c. Membuat objek baru</div><div class="choice">d. Menambah method</div></div>
+        </li>
+        <li class="q"><div class="q-text">40. Magic method `__set()` digunakan ketika…</div>
+          <div class="choices"><div class="choice">a. Menambah objek</div><div class="choice">b. Memberi nilai ke properti yang tidak ada atau private</div><div class="choice">c. Membuat konstruktor</div><div class="choice">d. Menghapus class</div></div>
+        </li>
+
+        <li class="q"><div class="q-text">41. Nama file class di PHP biasanya menggunakan…</div>
+          <div class="choices"><div class="choice">a. Ekstensi .php</div><div class="choice">b. Ekstensi .class</div><div class="choice">c. Ekstensi .oop</div><div class="choice">d. Ekstensi .inc</div></div>
+        </li>
+        <li class="q"><div class="q-text">42. Untuk menggabungkan file class ke dalam program digunakan…</div>
+          <div class="choices"><div class="choice">a. include/require</div><div class="choice">b. import class</div><div class="choice">c. join file</div><div class="choice">d. use object</div></div>
+        </li>
+        <li class="q"><div class="q-text">43. spl_autoload_register() digunakan untuk…</div>
+          <div class="choices"><div class="choice">a. Membuat objek</div><div class="choice">b. Otomatis meload class saat dipanggil</div><div class="choice">c. Menghapus objek</div><div class="choice">d. Menyimpan objek</div></div>
+        </li>
+        <li class="q"><div class="q-text">44. Design pattern yang memastikan hanya ada satu instance dari sebuah class adalah…</div>
+          <div class="choices"><div class="choice">a. Factory</div><div class="choice">b. Singleton</div><div class="choice">c. Strategy</div><div class="choice">d. Adapter</div></div>
+        </li>
+        <li class="q"><div class="q-text">45. Dalam OOP PHP, trait digunakan untuk…</div>
+          <div class="choices"><div class="choice">a. Menghapus objek</div><div class="choice">b. Menyediakan mekanisme multiple inheritance</div><div class="choice">c. Membuat konstanta</div><div class="choice">d. Membuat interface</div></div>
+        </li>
+        <li class="q"><div class="q-text">46. Keyword final pada method berarti…</div>
+          <div class="choices"><div class="choice">a. Method bisa di-override</div><div class="choice">b. Method tidak bisa di-override</div><div class="choice">c. Method tidak bisa dipanggil</div><div class="choice">d. Method harus abstract</div></div>
+        </li>
+        <li class="q"><div class="q-text">47. Keyword final pada class berarti…</div>
+          <div class="choices"><div class="choice">a. Class bisa diwarisi</div><div class="choice">b. Class tidak bisa diwarisi</div><div class="choice">c. Class harus abstract</div><div class="choice">d. Class menjadi static</div></div>
+        </li>
+        <li class="q"><div class="q-text">48. Namespace dalam PHP digunakan untuk…</div>
+          <div class="choices"><div class="choice">a. Menghapus objek</div><div class="choice">b. Menghindari bentrokan nama class/function</div><div class="choice">c. Membuat objek baru</div><div class="choice">d. Membuat variabel static</div></div>
+        </li>
+        <li class="q"><div class="q-text">49. Keyword use dalam PHP digunakan untuk…</div>
+          <div class="choices"><div class="choice">a. Menghapus objek</div><div class="choice">b. Memanggil namespace atau trait</div><div class="choice">c. Membuat konstruktor</div><div class="choice">d. Membuat interface</div></div>
+        </li>
+        <li class="q"><div class="q-text">50. Untuk memeriksa apakah sebuah objek adalah instance dari class tertentu digunakan operator…</div>
+          <div class="choices"><div class="choice">a. new</div><div class="choice">b. instanceof</div><div class="choice">c. is_object</div><div class="choice">d. type</div></div>
+        </li>
+      </ol>
+
+      <div class="answer-key card" id="answer-key">
+        <h3>Kunci Jawaban</h3>
+        <pre>
+1.    2.    3.    4.    5. 
+
+        </pre>
+      </div>
+
+    </div>
+
+    <footer>
+      Dibuat otomatis — jika ingin versi yang berbeda (mis. tanpa kunci, dengan shuffle, atau file .docx/.pdf), beri tahu saya.
+    </footer>
+  </div>
+
+  <script>
+    const toggleBtn = document.getElementById('toggle-answers');
+    const answerKey = document.getElementById('answer-key');
+    const printBtn = document.getElementById('print');
+
+    toggleBtn.addEventListener('click', ()=>{
+      if(answerKey.style.display === 'block'){
+        answerKey.style.display = 'none';
+        toggleBtn.textContent = 'Tampilkan Kunci Jawaban';
+      } else {
+        answerKey.style.display = 'block';
+        toggleBtn.textContent = 'Sembunyikan Kunci Jawaban';
+        answerKey.scrollIntoView({behavior:'smooth'});
+      }
+    });
+
+    printBtn.addEventListener('click', ()=> window.print());
+  </script>
+</body>
+</html>
